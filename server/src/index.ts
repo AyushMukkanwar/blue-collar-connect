@@ -9,6 +9,7 @@ import adminRoutes from './routes/admin-routes.js'
 import userRoutes from './routes/user-routes.js'
 
 configDotenv()
+export const runtime = 'nodejs'
 
 const app = new Hono().basePath('/api')
 
@@ -35,6 +36,5 @@ app.get('/', (c) => {
 })
 
 // Vercel-specific configuration
-export const runtime = 'nodejs'
 export const GET = handle(app)
 export const POST = handle(app)
