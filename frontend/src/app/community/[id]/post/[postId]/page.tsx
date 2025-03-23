@@ -34,14 +34,8 @@ interface CommunityPost {
   updatedAt: any;
 }
 
-interface PostPageProps {
-  params: {
-    id: string;
-    postId: string;
-  };
-}
 
-export default function PostPage({ params }: PostPageProps) {
+export default function PostPage() {
   const { id, postId } = useParams();
   const [post, setPost] = useState<CommunityPost | null>(null);
   const [commentContent, setCommentContent] = useState("");
