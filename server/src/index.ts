@@ -18,6 +18,7 @@ app.use('/api/*',cors({
     'http://localhost:3001',
     'https://blue-collar-connect-frontend.vercel.app'
   ],
+  allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 }))
 
