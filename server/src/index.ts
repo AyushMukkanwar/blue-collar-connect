@@ -9,7 +9,7 @@ import adminRoutes from './routes/admin-routes.js'
 import userRoutes from './routes/user-routes.js'
 
 configDotenv()
-export const runtime = 'nodejs'
+export const runtime = 'edge'
 
 const app = new Hono().basePath('/api')
 
