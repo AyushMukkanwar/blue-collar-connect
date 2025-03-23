@@ -10,10 +10,9 @@ import userRoutes from './routes/user-routes.js'
 
 configDotenv()
 
-// Create an instance of Hono and set a base path for the API
 const app = new Hono().basePath('/api')
 
-// Apply CORS to all sub-routes under the API base path
+// CORS configuration
 app.use('*', cors({
   origin: [
     'http://localhost:3000',
@@ -23,19 +22,19 @@ app.use('*', cors({
   credentials: true,
 }))
 
-// Register your routes (note: the routes paths are now relative to the basePath '/api')
+// Routes
 app.route('/auth', authRoutes)
 app.route('/community', communityRoutes)
 app.route('/job', jobRoutes)
 app.route('/user', userRoutes)
 app.route('/admin', adminRoutes)
 
-// Optional: a default route for '/'
+// Default route
 app.get('/', (c) => {
   return c.json({ message: 'Welcome to the API!' })
 })
 
-// For Vercel's App Router, set the runtime to Node.js and export GET and POST handlers
+// Vercel-specific configuration
 export const runtime = 'nodejs'
 export const GET = handle(app)
 export const POST = handle(app)
