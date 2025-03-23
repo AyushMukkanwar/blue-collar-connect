@@ -51,7 +51,7 @@ export interface Comment {
   dislikes: number;
 }
 
-export default function CommunityPage({ params }: { params: { id: string } }) {
+export default function CommunityPage() {
   const [community, setCommunity] = useState<Community | null>(null);
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
