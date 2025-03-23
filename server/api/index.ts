@@ -3,11 +3,11 @@ import { handle } from '@hono/node-server/vercel'
 import { cors } from 'hono/cors'
 import { configDotenv } from 'dotenv'
 
-import authRoutes from '../routes/authentication-routes.js'
-import communityRoutes from '../routes/community-routes.js'
-import jobRoutes from '../routes/job-routes.js'
-import adminRoutes from '../routes/admin-routes.js'
-import userRoutes from '../routes/user-routes.js'
+import authRoutes from '@/routes/authentication-routes.js'
+import communityRoutes from '@/routes/community-routes.js'
+import jobRoutes from '@/routes/job-routes.js'
+import adminRoutes from '@/routes/admin-routes.js'
+import userRoutes from '@/routes/user-routes.js'
 
 configDotenv()
 
@@ -36,4 +36,4 @@ app.get('/', (c) => {
 })
 
 // Vercel-specific config
-export default handle(app)
+export default handle(app);

@@ -2,11 +2,11 @@ import { Hono } from 'hono';
 import { handle } from '@hono/node-server/vercel';
 import { cors } from 'hono/cors';
 import { configDotenv } from 'dotenv';
-import authRoutes from '../routes/authentication-routes.js';
-import communityRoutes from '../routes/community-routes.js';
-import jobRoutes from '../routes/job-routes.js';
-import adminRoutes from '../routes/admin-routes.js';
-import userRoutes from '../routes/user-routes.js';
+import authRoutes from '../src/routes/authentication-routes.js';
+import communityRoutes from '../src/routes/community-routes.js';
+import jobRoutes from '../src/routes/job-routes.js';
+import adminRoutes from '../src/routes/admin-routes.js';
+import userRoutes from '../src/routes/user-routes.js';
 configDotenv();
 const app = new Hono().basePath('/api');
 // Enable CORS

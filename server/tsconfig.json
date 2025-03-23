@@ -13,10 +13,12 @@
     "types": [
       "node"
     ],
+    
     "strict": true,
     "outDir": "./dist",
     "skipLibCheck": true
   },
+  
   "tsc-alias": {
     "resolveFullPaths": true
   }
