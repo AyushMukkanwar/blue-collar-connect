@@ -9,11 +9,9 @@ import adminRoutes from './routes/admin-routes.js'
 import userRoutes from './routes/user-routes.js'
 
 configDotenv()
-export const runtime = 'edge'
 
 const app = new Hono().basePath('/api')
 
-// CORS configuration
 app.use('*', cors({
   origin: [
     'http://localhost:3000',
@@ -23,18 +21,19 @@ app.use('*', cors({
   credentials: true,
 }))
 
-// Routes
+// Define Routes
 app.route('/auth', authRoutes)
 app.route('/community', communityRoutes)
 app.route('/job', jobRoutes)
 app.route('/user', userRoutes)
 app.route('/admin', adminRoutes)
 
-// Default route
+// Default Route
 app.get('/', (c) => {
   return c.json({ message: 'Welcome to the API!' })
 })
 
-// Vercel-specific configuration
+// Vercel-specific config
+export const runtime = 'nodejs'
 export const GET = handle(app)
 export const POST = handle(app)
