@@ -53,7 +53,7 @@ export function JobsList() {
   const [showFilters, setShowFilters] = useState(false);
 
   const { jobPosts, loading, error } = useJobPosts({
-    limit: 10,
+    limit: 50,
     // Optional: Pass other parameters as needed
   });
 
