@@ -272,12 +272,12 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center p-4 pt-16 pb-20 md:pt-20 md:pb-4 overflow-hidden bg-background">
+    <div className="fixed inset-0 flex items-center justify-center p-4 pt-28 pb-20 md:pt-20 md:pb-4 overflow-hidden bg-background">
       <div className="w-full max-w-4xl h-[calc(100vh-5rem)] md:h-[min(800px,calc(100vh-6rem))] flex">
         <Card className="border rounded-xl shadow-lg overflow-hidden bg-gradient-to-b from-background to-muted/30 w-full h-full flex flex-col">
           <div className="flex flex-col h-full">
             {/* Chat header */}
-            <div className="p-3 md:p-4 border-b bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30">
+            <div className="p-3 pt-7 md:p-4 border-b bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
                   <div className="relative">
@@ -384,7 +384,7 @@ export default function ChatPage() {
             </ScrollArea>
 
             {/* Chat input */}
-            <div className="p-3 md:p-4 border-t bg-gradient-to-r from-slate-50 to-blue-50 dark:from-slate-900/50 dark:to-blue-900/50 relative z-10 shadow-lg">
+            <div className="p-3 pb-14 md:p-4 border-t bg-gradient-to-r from-slate-50 to-blue-50 dark:from-slate-900/50 dark:to-blue-900/50 relative z-10 shadow-lg">
               <form
                 onSubmit={(e) => {
                   e.preventDefault()
