@@ -204,11 +204,12 @@ export function JobsList() {
                           <SelectValue placeholder="All types" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="all">All types</SelectItem>
-                          <SelectItem value="Full-time">Full-time</SelectItem>
-                          <SelectItem value="Part-time">Part-time</SelectItem>
-                          <SelectItem value="Contract">Contract</SelectItem>
-                          <SelectItem value="Temporary">Temporary</SelectItem>
+                          <SelectItem value="all">All Types</SelectItem>
+                          <SelectItem value="full-time">Full-time</SelectItem>
+                          <SelectItem value="part-time">Part-time</SelectItem>
+                          <SelectItem value="contract">Contract</SelectItem>
+                          <SelectItem value="temporary">Temporary</SelectItem>
+                          <SelectItem value="seasonal">Seasonal</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -298,11 +299,12 @@ export function JobsList() {
                   <SelectValue placeholder="All types" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All types</SelectItem>
+                  <SelectItem value="all">All Types</SelectItem>
                   <SelectItem value="full-time">Full-time</SelectItem>
                   <SelectItem value="part-time">Part-time</SelectItem>
                   <SelectItem value="contract">Contract</SelectItem>
                   <SelectItem value="temporary">Temporary</SelectItem>
+                  <SelectItem value="seasonal">Seasonal</SelectItem>
                 </SelectContent>
               </Select>
             </div>
