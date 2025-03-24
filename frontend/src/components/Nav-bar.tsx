@@ -17,6 +17,7 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useUser } from "@/context/userContext";
 import { signOut } from "@/actions/auth";
+import Image from "next/image";
 
 // Add profileOpen state
 export function NavigationBar() {
@@ -71,7 +72,7 @@ export function NavigationBar() {
             {/* Logo for desktop */}
             {isDesktop && (
               <div className="flex-shrink-0 py-4">
-                <span className="font-bold text-xl">BlueCollar</span>
+                <Image src="/logo.jpeg" alt="" width={150} height={150}/>
               </div>
             )}
 
