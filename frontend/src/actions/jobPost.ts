@@ -2,7 +2,7 @@ import { JobPost, JobPostForm } from "@/types/jobpost"; // Import your JobPost i
 import { getIdTokenNoParam } from "@/utils";
 
 export async function getJobPosts({
-  limit = 10,
+  limit = 50,
   employer_id,
   type_of_work,
 }: {
