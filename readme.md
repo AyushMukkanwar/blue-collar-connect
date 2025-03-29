@@ -2,6 +2,12 @@
 
 Blue Collar Connect AI is a platform designed to streamline job matching for blue-collar workers using AI-powered recommendations and a modern web interface.
 
+## Live Demo  
+🚀 [Click here to visit the deployed site](https://blue-collar-connect-frontend.vercel.app/)  
+
+## Project Demo Video  
+🎥 [Watch the project demo on YouTube](https://www.youtube.com/watch?v=sXHWKHJ0Ec0&t=3s)
+
 ## Features
 - AI-driven job matching system
 - User authentication and profile management
