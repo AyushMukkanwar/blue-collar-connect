@@ -135,7 +135,7 @@ export default function JobDetailPage() {
                     onClick={() => setIsMapOpen(true)}
                     variant="outline"
                     size="sm"
-                    className="mt-2"
+                    className="mt-2 bg-blue-200"
                   >
                     View Map
                   </Button>

@@ -10,7 +10,7 @@ interface UseJobPostsParams {
 }
 
 export function useJobPosts({
-  limit = 10,
+  limit = 50,
   employer_id,
   type_of_work,
   enabled = true,

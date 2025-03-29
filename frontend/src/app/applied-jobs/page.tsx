@@ -12,6 +12,7 @@ import {
   Search,
   SlidersHorizontal,
   X,
+  Loader2,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -104,12 +105,10 @@ export default function AppliedJobs() {
 
   if (loading) {
     return (
-      <div className="container max-w-5xl mx-auto py-12 px-4">
-        <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-        </div>
+      <div className="flex justify-center items-center h-screen">
+        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
       </div>
-    );
+    )
   }
 
   return (
