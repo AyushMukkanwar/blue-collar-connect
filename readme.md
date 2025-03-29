@@ -8,15 +8,17 @@ Blue Collar Connect AI is a platform designed to streamline job matching for blu
 ## Project Demo Video  
 🎥 [Watch the project demo on YouTube](https://www.youtube.com/watch?v=sXHWKHJ0Ec0)
 
-## Features
-- AI-driven job matching system
-- User authentication and profile management
-- Real-time chat support
-- Interactive job postings and applications
-- Responsive design for mobile and desktop
+## Features  
+- **Job Listings** – Easily browse and apply for blue-collar job opportunities.  
+- **Community Dashboard** – Engage with a supportive network of workers and employers.  
+- **Worker Profiles** – Showcase skills, experience, and certifications for better hiring opportunities.  
+- **AI-Powered RAG Chatbot** – Get real-time answers on labor laws, wages, and job schemes.  
+- **Map Integration** – View job locations and find opportunities near you.  
+- **User Authentication & Profile Management** – Secure access and personalized experience.  
+- **Responsive Design** – Optimized for both mobile and desktop devices.  
 
 ## Tech Stack
-- **Frontend**: Next.js, React, Tailwind CSS, Google Maps API
+- **Frontend**: Next.js, React, Tailwind CSS, Google Maps API, Firebase
 - **Backend**: Hono.js, Firebase
 - **AI Module**: FastAPI, Langchain, Vertex AI, Gemini
 - **Development Environment**: Google Project IDX
@@ -41,7 +43,7 @@ cd blue-collar-connect-ai
 ```sh
 cd frontend  # Navigate to frontend directory
 npm install
-cd ../server  # Navigate to backend directory
+cd server  # Navigate to backend directory
 npm install
 ```
 
@@ -112,5 +114,5 @@ GOOGLE_API_KEY=
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, reach out via email: `your-email@example.com`
+For any inquiries, reach out via email: `bluecollarconnectcompany@gmail.com`
 
