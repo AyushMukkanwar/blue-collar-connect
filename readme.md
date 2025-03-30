@@ -1,6 +1,6 @@
-# Blue Collar Connect AI
+# Blue Collar Connect
 
-Blue Collar Connect AI is a platform designed to streamline job matching for blue-collar workers using AI-powered recommendations and a modern web interface.
+Blue-Collar-Connect is a platform designed to empower rural blue-collar workers by connecting them with job opportunities and providing a supportive community. Our platform includes job listings, worker profiles, a community dashboard, an AI-powered chatbot for job assistance, and Google Maps integration to help workers find jobs nearby.
 
 ## Live Demo  
 🚀 [Click here to visit the deployed site](https://blue-collar-connect-frontend.vercel.app/)  
@@ -34,8 +34,8 @@ Ensure you have the following installed:
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/AyMk544/blue-collar-connect-ai.git
-cd blue-collar-connect-ai
+git clone https://github.com/AyMk544/blue-collar-connect.git
+cd blue-collar-connect
 ```
 
 ### Install Dependencies
