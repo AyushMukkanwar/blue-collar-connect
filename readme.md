@@ -71,38 +71,6 @@ Blue Collar Connect is more than just a job platform—it's a comprehensive ecos
 
 ---
 
-## 🏗️ System Architecture
-
-<div align="center">
-
-```
-┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │◄──►│   Backend       │
-│   (Next.js)     │    │   (Hono.js)     │
-│                 │    │                 │
-│ • React UI      │    │ • REST API      │
-│ • Tailwind CSS  │    │ • Firebase      │
-│ • Maps API      │    │ • Auth System   │
-│ • PWA Support   │    │ • Data Layer    │
-└─────────────────┘    └─────────────────┘
-         │
-         │
-         ▼
-┌─────────────────┐
-│   AI Module     │
-│   (FastAPI)     │
-│                 │
-│ • RAG System    │
-│ • Langchain     │
-│ • Vertex AI     │
-│ • Gemini        │
-└─────────────────┘
-```
-
-</div>
-
----
-
 ## 🛠️ Technology Stack
 
 ### Frontend Layer
